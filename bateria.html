@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarCalc-Energias Renováveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../SlarCalc2 -Energias Renováveis/faviconsol.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><u>SolarCalc-Energias Renováveis</u></h1>
+    </header>
+
+    <div class="bateria">
+
+    <div class="imgbateria">
+        <img src="../SlarCalc2 -Energias Renováveis/imageminicio.png">
+    </div>
+    
+    <div class="bateria1">
+        <h2><u>Dimensionamento de baterias</u></h2> <br/>
+    
+       Digite o consumo mensal em KWh<br/>
+       <input id="a1"type="number" /><br/>
+    
+       Digite a tensão da bateria<br/>
+       <input id="a2"type="number" /><br/>
+    
+       Digite o números de horas em que a bateria será usada<br/>
+       <input id="a3"type="number" /><br/>
+    
+       Digite a capacidade da bateria em Amperes<br/>
+       <input id="a4"type="number" /><br/><br/>
+    
+       <button onclick="multiplicar()">Multiplicar</button> <br/> <br/> 
+
+       Serão necessárias aproximadamente <b> <span></span> </b> baterias para suprir o consumo informado.
+    <br/> <br/><br/> 
+
+    <b><u>Considere apenas duas casas após o ponto.</u></b> <br/><br/>
+
+    <b><u>Lembre-se de arredondar o cálculo para melhores resultados.</u></b>
+    <br/> <br/><br/> 
+
+       <a href="C:\Users\user\Desktop\SlarCalc2 -Energias Renováveis\index.html" target=>Voltar</a> 
+
+    </div>
+</div>
+    
+
+    <script>
+        var n1 = document.querySelector ("#a1")
+        var n2 = document.querySelector ("#a2")
+        var n3 = document.querySelector ("#a3")
+        var n4 = document.querySelector ("#a4")
+
+        var  resultado= document.querySelector("span")
+
+        function multiplicar () {
+            resultado.innerHTML = (a1.value / a2.value) * a3.value / a4.value
+           
+        }
+    
+    </script>
+    
+    
+
+</body>
+</html>

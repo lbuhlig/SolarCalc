@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarCalc-Energias Renováveis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../SlarCalc2 -Energias Renováveis/faviconsol.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <h1><u>SolarCalc-Energias Renováveis</u></h1>
+    </header>
+
+
+    <div class="inicio">
+    
+    <div class="imginicial">
+        <img src="../SlarCalc2 -Energias Renováveis/imageminicio.png">
+    </div>
+   
+    <div class="escolha">
+
+        <select id="select">
+            <option value="" selected="">O que deseja calcular?</option>
+            <option value="C:\Users\user\Desktop\SlarCalc2 -Energias Renováveis\bateria.html">Dimensionamento de baterias</option>
+            <option value="C:\Users\user\Desktop\SlarCalc2 -Energias Renováveis\conversao1.html">Converter Kilowatts (KWh) em Watts</option>
+            <option value="C:\Users\user\Desktop\SlarCalc2 -Energias Renováveis\conversao2.html">Converter Watts em Kilowatts (KWh)</option>
+            <option value="C:\Users\user\Desktop\SlarCalc2 -Energias Renováveis\painel.html">Dimensionamento de Painéis Solares</option>
+    
+          </select>
+          
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          
+          <button onclick="redirecionamento()"> Escolher</button>
+          
+          <script>
+            function redirecionamento () {
+              var selectbox = document.getElementById("select");
+              var selectedValue = selectbox.options[selectbox.selectedIndex].value;
+              window.location.href = selectedValue;
+            }
+          
+          </script>
+       
+    </div>
+    </div>
+
+    <div class="crescimento">
+    
+        <h2><u>Crescimento da Energia Solar no Brasil</u></h2>
+        
+    <div class="paragrafo">
+    
+        <p>Conforme dados da Agência Nacional de Energia Elétrica - ANEEL, a matriz elétrica brasileira é, preponderantemente, formada pelo uso de energia gerada nas hidrelétricas, correspondendo a 65,2% da energia gerado no país. 
+             
+            <br/><br/>
+    
+            Ao longo dos anos, no entanto, houve um aumento de outros tipos de geração de energia,  sendo uma delas a solar fotovoltaica, que representa <b>apenas 1,7 % da matriz elétrica.</b> 
+            No entanto, tal matriz, é uma que mais tem potencialidades de crescer, isso por que,  “a maior parte do território brasileiro está localizada relativamente próxima da linha do Equador, de forma que não se observam grandes variações na duração solar do dia, durante as estações do ano.”  (<i>Atlas de Energia Elétrica do Brasil.</i>)
+                <br/><br/><br/>
+    
+    
+            <div clas="matrizfoto">
+                <img src="../SlarCalc2 -Energias Renováveis/matriz elétrica (1).png">
+                <br/>
+                <i>Matriz Elétrica Brasileira. Fonte imagem <a href="https://www.epe.gov.br/pt/abcdenergia/matriz-energetica-e-eletrica" target="_blank">Empresa de Pesquisa Energética
+                </a> </i>
+    
+            </div>
+    
+            <br/><br/>
+    
+            Tendo em vista esse potencial, a portaria normativa da ANEEL nº 482, de 17 de abril de 2012, aprovou regras que passaram a facilitar que o próprio produza energia, criando o sistema de compensação de energia. 
+             
+            Esse sistema de compensação significa que, quando o consumidor instala pequenas geradoras (como a solar fotovoltaica) em uma residência, caso não consuma tudo o que gerou, o que sobrar irá ser injetado no sistema da distribuidora, produzindo crédito para o consumidor. 
+             
+            A portaria normativa veio na tentativa de impulsionar o uso de energias renováveis, permitindo que o próprio morador instale uma pequena geradora em sua residência ou mesmo no local de trabalho.  
+             
+            Há duas formas de se obter energia através do sol: <b>a energia solar térmica e a solar fotovoltaica. </b>
+            <br/><br/>
+    
+             
+            Na energia solar térmica, o <b>calor do sol</b> aquece diretamente um fluido, geralmente água, que é aquecida e usada para aquecimento de ambientes, água quente para chuveiros ou em processos industriais. A energia é captada por meio de painéis solares térmicos. Já na energia solar fotovoltaica, há <b>conversão da luz solar</b> em energia elétrica. 
+             
+             A energia coletada por meio da energia solar fotovoltaica pode ser armazenada em baterias, para uso posterior, ou utilizada diretamente em sistemas conectados à rede elétrica.  
+             <br/><br/>
+             
+             <div>
+                <img src="../SlarCalc2 -Energias Renováveis/solartermica.jpg">
+                <br/>
+                <i>Energia Solar térmica e solar fotovoltaica</i>
+            </div>
+            
+             <br/><br/>
+    
+            Quando há armazenamento de energia, estamos diante de um sistema fotovoltaico autônomo ou isolado. Esse formato é comum em locais onde não há rede elétrica, como em áreas rurais afastadas, comunidades isoladas, dentre outros. Nesse modelo, existe o painel fotovoltaico, um controlador de carga, um inversor de tensão e uma bateria. O controlador de carga faz a conexão entre o painel fotovoltaico e a bateria, controlando para que não haja sobrecarrregamento da bateria. Já o inversor transformará a energia captada pelo painel para poder ser usada para abastecimento de eletrodomésticos e outros objetos elétricos.   
+            
+            <div>
+                <img src="../SlarCalc2 -Energias Renováveis/autonomo.jpg">
+                <br/>
+                <i>Sistema Solar Autônomo. Fonte imagem <a href="https://www.neosolar.com.br/aprenda/saiba-mais/sistemas-de-energia-solar-fotovoltaica-e-seus-componentes" target="_blank">NeoSolar</a></i> 
+            </div>
+            
+            <br/><br/>
+    
+            Em relação ao sistema conectado à rede, ele é usado em lugares onde já há rede elétrica. Nesses sistemas, não há uma bateria, a energia gerada pelo painel solar é injetada diretamente na rede elétrica pública. 
+             
+            Diferentemente do sistema solar fotovoltaico autônomo, onde há o armazenamento da energia por meio de baterias, podendo ser usado a qualquer momento, no caso do sistema conectado diretamente à rede de energia elétrica publica, o fornecimento de energia está ligado à quantidade de luz solar. 
+            
+            Como não é possível armazenar energia, durante a noite ou em dias sem luz não haverá geração de energia, devendo ser utilizada a fornecida pela rede pública. 
+            
+            <div>
+                <img src="../SlarCalc2 -Energias Renováveis/conectadoarede.jpg">
+                <br/>
+                <i>Sistema Solar Conectado à Rede. Fonte imagem <a href="https://www.neosolar.com.br/aprenda/saiba-mais/sistemas-de-energia-solar-fotovoltaica-e-seus-componentes" target="_blank">NeoSolar</a></i> 
+    
+            </div>
+            
+            </p>
+        </div>
+    
+    
+    </div>
+    
+</body>
+</html>
